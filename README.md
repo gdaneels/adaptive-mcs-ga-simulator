@@ -1,7 +1,7 @@
 # adaptive-mcs-ga-simulator
 An extended 6TiSCH simulator for slot bonding with a genetic algorithm (GA) scheduler
 
-1) To let the simulator generate a topoogy based on experiment input parameters file (this should be ran in Python 2.7):
+1) To let the simulator generate a topoogy based on experiment input parameters file (Python 2.7):
 
         python runSim.py --genTopology=1 --topologyPath=../../topologies --json=input-example.json
    
@@ -9,7 +9,7 @@ An extended 6TiSCH simulator for slot bonding with a genetic algorithm (GA) sche
 
         python ga-heuristic.py -i experiments/input-example.json -l DEBUG
 
-3) To let the simulator run the TSCH experiment, using the GA schedule allocations, for the given experiment, topology and schedule file, do:
+3) To let the simulator run the TSCH experiment, using the GA schedule allocations, for the given experiment, topology and schedule file, do (Python 2.7):
 
         /usr/bin/python runSim.py --json=../../experiments/input-example.json --ilpfile=../../topologies/simulator-topology.json --ilpschedule=../../solutions/ga-schedule.json
 
