@@ -7,11 +7,11 @@ An extended 6TiSCH simulator for slot bonding with a genetic algorithm (GA) sche
    
 2) To let the GA solve the slot bonding problem for the generated topology. This is to be executed in the main directory (> Python 3):
 
-        python ga-heuristic.py -i experiments/input-example.json -l DEBUG
+        python ga-heuristic.py -i input-example.json -l DEBUG
 
 3) To let the simulator run the TSCH experiment, using the GA schedule allocations, for the given experiment, topology and schedule file. This is to be executed in the simulator/bin directory (Python 2.7):
 
-        /usr/bin/python runSim.py --json=../../experiments/input-example.json --ilpfile=../../topologies/simulator-topology.json --ilpschedule=../../solutions/ga-schedule.json
+        /usr/bin/python runSim.py --json=../../input-example.json --ilpfile=../../topologies/simulator-topology.json --ilpschedule=../../solutions/ga-schedule.json
 
 The output of the simulation can be found in:
 - bin/SimData/output_cpu0.dat
