@@ -3,7 +3,7 @@ An extended 6TiSCH simulator for slot bonding with a genetic algorithm (GA) sche
 
 1) To let the simulator generate a topology based on experiment input parameters file. This is to be executed in the simulator/bin directory (Python 2.7):
 
-        python runSim.py --genTopology=1 --topologyPath=../../topologies --json=input-example.json
+        python runSim.py --genTopology=1 --topologyPath=../../topologies --json=../../input-example.json
    
 2) To let the GA solve the slot bonding problem for the generated topology. This is to be executed in the main directory (> Python 3):
 
